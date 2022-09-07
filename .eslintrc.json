@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "globals": {
+    "React": "readonly"
+  },
+  "plugins": ["react", "@typescript-eslint", "import"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }]
+  }
+}
